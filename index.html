@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio Minimal</title>
+  <title>Portfolio</title>
 
   <!-- Flickity CSS -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -11,6 +11,7 @@
 </head>
 <body>
 
+
   <div class="container">
 
     <div class="header">
@@ -18,6 +19,28 @@
       <div class="nav">
         <a href="#">contact</a>
       </div>
+    </div>
+
+    <div class="hero">
+
+      <div class="hero-top">
+        
+        <div class="hero-image">
+          <img src="photos/me/me.png" alt="">
+        </div>
+
+        <div class="hero-text">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nulla omnis maiores itaque delectus facilis, ipsum ratione magni, atque optio quaerat recusandae? Voluptate, aliquid! Officiis repellendus ab nihil laboriosam hic?
+          </p>
+        </div>
+
+      </div>
+
+      <div class="hero-title">
+        some photos
+      </div>
+
     </div>
 
     <div class="title">EVOLUZIONE COLLECTION</div>
@@ -72,9 +95,13 @@
     </div>
 
   </div>
+  <div class="lightbox" id="lightbox">
+    <img id="lightbox-img" src="">
+  </div>
 
   <!-- Flickity JS -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="portfolio.js"></script>
 
 </body>
 </html>
