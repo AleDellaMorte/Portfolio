@@ -79,7 +79,7 @@ body {
     width: 100vw;
     max-width: 1700px;
     margin: 40px auto;
-    padding: 40px;
+    padding: 40px auto;
     padding-bottom: 0;
     margin-bottom: 0;
     box-sizing: border-box;
@@ -169,55 +169,63 @@ body {
 
 /* MOBILE */
 @media (max-width: 1080px) {
-    .header img{
-      height: 50px;
-    }
-    .nav a{
-      font-size: 40px;
-    }
-    .hero{
-      height: 45vh;
-      margin-bottom: 25px;
-    }
-    .hero-top {
-      flex-direction: column;
-      gap: 20px;
-    }
+  .header img{
+    height: 50px;
+  }
+  .nav a{
+    font-size: 40px;
+  }
+  .hero{
+    height: 45vh;
+    margin-bottom: 25px;
+  }
+  .hero-top {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .hero-image img {
-      width: 100%;
-      max-width: 300px;
-    }
+  .hero-image img {
+    width: 100%;
+    max-width: 300px;
+  }
 
-    .hero-text {
-      max-width: 75%;
-      font-size: 30px;
-    }
+  .hero-text {
+    max-width: 75%;
+    font-size: 30px;
+  }
 
-    .hero-title {
-      height: 200px;
-      font-size: 200px;
-    }
+  .hero-title {
+    height: 200px;
+    font-size: 200px;
+  }
 
-    .container {
-      width: 100%;
-      padding: 20px;
-    }
+  .container {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 
-    .title {
-      font-size: 40px;
-    }
+  .title {
+    font-size: 40px;
+  }
 
-    .carousel-cell {
-      height: 600px; /* più basso per mobile */
-      margin-right: 12px;
-    }
+  .carousel-cell {
+    height: 600px; /* più basso per mobile */
+    margin-right: 12px;
+  }
 
-    .carousel-cell img {
-      height: 100%;
-      width: auto;
-    }
-
+  .carousel-cell img {
+    height: 100%;
+    width: auto;
+  }
+  .footer{
+    width: 100vw;
+    transform: translateX(-20px);
+  }
+  .footer p{
+    text-decoration: underline;
+  }
 
 
 }
