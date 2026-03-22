@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+/* Webfont: Thunder-BlackLC */@font-face {
+    font-family: 'ThunderBlack';
+    src: url('fonts/Thunder/Thunder-BlackLC.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
 
 html, body {
   overflow-x: hidden;
@@ -6,7 +23,7 @@ html, body {
 body {
     margin: 0;
     background: #ffffff;
-    font-family: "Lora", serif;
+    font-family: "Lora", italic;
 }
 
 .hero {
@@ -37,14 +54,14 @@ body {
 
 /* titolo gigante */
 .hero-title {
-
+    font-family: "ThunderBlack";
+    text-transform: uppercase;
     position: absolute;
-    font-size: 120px;
-    font-weight: 700;
+    font-size: 200px;
     line-height: 1;
-    letter-spacing: -2px;
     bottom: 0;
 }
+
 
 .container {
     width: 100vw;
@@ -139,7 +156,7 @@ body {
     }
 
     .hero-title {
-      font-size: 90px;
+      font-size: 200px;
     }
 
     .container {
