@@ -5,9 +5,8 @@
   <title>Portfolio</title>
 
   <!-- Flickity CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
-<link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="flickity/flickity.min.css">
+  <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
 
@@ -15,9 +14,9 @@
   <div class="container">
 
     <div class="header">
-      <img src="photos/me/Ale.png" alt="Ale">
+      <a href="index.html"><img src="photos/me/Ale.png" alt="Ale"></a>
       <div class="nav">
-        <a href="#">contact</a>
+        <a href="#">contact me!</a>
       </div>
     </div>
 
@@ -50,13 +49,13 @@
 
     </div>
 
-    <div class="title">EVOLUZIONE COLLECTION ➔</div>
+    <div class="title">EVOLUZIONE COLLECTION</div>
 
     <div class="carousel"
          data-flickity='{
            "cellAlign": "left",
            "contain": false,
-           "pageDots": false,
+           "pageDots": true,
            "prevNextButtons": false,
            "lazyLoad": 3
          }'>
@@ -77,13 +76,13 @@
 
     </div>
 
-    <div class="title">ANIMALS ➔</div>
+    <div class="title">ANIMALS</div>
 
     <div class="carousel"
          data-flickity='{
            "cellAlign": "left",
            "contain": false,
-           "pageDots": false,
+           "pageDots": true,
            "prevNextButtons": false,
            "lazyLoad": 3
          }'>
@@ -108,7 +107,7 @@
   </div>
 
   <!-- Flickity JS -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="flickity/flickity.pkgd.min.js"></script>
   <script src="portfolio.js"></script>
 
 </body>
