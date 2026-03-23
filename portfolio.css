@@ -185,13 +185,13 @@ body {
   font-size: 100px;
   margin-top: 0;
   margin-bottom: 10px;
-  line-height: .8;
+  line-height: 1;
 }
 .intro p{
   font-size: 25px;
 }
 .intro-text{
-  width: 30%;
+  width: 35%;
   height: 60%;
 }
 
