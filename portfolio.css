@@ -323,28 +323,24 @@ body {
     margin-bottom: 0;
   }
   .intro{
-    height: auto;
-    flex-direction: row;
-    align-items: center;
-    padding: 3rem 0;
-    text-align: left;
-    gap: 15px;
+    height: 50vh;
+    justify-content: space-between;
   }
   .intro img{
     width: auto;
-    height: 350px;
+    height: 50%;
     margin-bottom: 0;
   }
   .intro-text{
-    flex: 1;
-    height: 350px;
-    margin-right: 0;
+    width: 50%;
+    height: 50%;
+    margin-right: 40px;
   }
   .intro h1{
     font-size: 5rem;
   }
   .intro p{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding-right: 0;
   }
 
