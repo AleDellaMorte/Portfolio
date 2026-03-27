@@ -11,3 +11,6 @@ emailEl.addEventListener("click", () => {
     emailEl.textContent = original;
   }, 1500);
 });
+ScrollReveal().reveal('.intro-text', { delay: 200, origin: 'top', viewOffset: {top: 100}});
+ScrollReveal().reveal('.title', { delay: 200, origin: 'top'});
+ScrollReveal().reveal('.carousel', { delay: 200, origin: 'top'});
