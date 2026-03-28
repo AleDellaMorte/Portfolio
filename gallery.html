@@ -7,12 +7,10 @@
         <style>
             body {
                 margin: 0;
-                padding: 40px;
                 font-family: Arial;
             }
             .container {
                 width: 100vw;
-                width: 100%;
                 max-width: 1700px;
                 margin: 40px auto;
                 padding: clamp(1rem, 10vw, 10.5rem);
@@ -45,6 +43,11 @@
                 width: 100%;
                 height: auto;
                 display: block;
+            }
+            @media (max-width: 1100px){
+                .container{
+                    padding: clamp(1rem, 5vw, 10.5rem);
+                }
             }
         </style>
     </head>
