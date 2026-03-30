@@ -71,4 +71,7 @@ body {
     .container{
         padding: clamp(1rem, 5vw, 10.5rem);
     }
+    .row{
+        flex-direction: column;
+    }
 }
