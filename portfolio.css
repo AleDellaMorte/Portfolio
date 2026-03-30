@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @font-face {
     font-family: 'ThunderBlack';
     src: url('fonts/Thunder/Thunder-BlackLC.ttf') format('truetype');
@@ -13,7 +12,13 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
-
+@font-face {
+    font-family: 'Delight';
+    src: url('fonts/Delight/Delight-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
 :root {
   --bg-color: #ffffff;
   --txt-color: #1b1b1b;
@@ -36,7 +41,7 @@ body {
     margin: 0;
     background: var(--bg-color);;
     color: var(--txt-color);
-    font-family: "Lora", italic;
+    font-family: "Delight";
 }
 a, a:visited, a:link, a:active{
   color: var(--txt-color);
@@ -337,11 +342,12 @@ a:hover{
     margin-bottom: 0;
   }
   .intro{
-    height: 50vh;
+    height: auto;
+    margin: 100px 0 100px 0;
     justify-content: left;
   }
   .intro img{
-    width: auto;
+    height: 30vh;
     margin-bottom: 0;
   }
   .intro-text{
