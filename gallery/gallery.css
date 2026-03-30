@@ -16,7 +16,6 @@ body {
     margin: 40px auto;
     padding: clamp(1rem, 10vw, 10.5rem);
     padding-top: 0;
-    padding-bottom: 0;
     margin-bottom: 0;
     box-sizing: border-box;
 }
@@ -49,19 +48,34 @@ body {
 }
 
 
-.gallery {
+#gallery {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.gallery img {
+/* Default: MOBILE */
+.row {
+    display: contents; /* 🔥 magia */
+}
+
+.row img {
     width: 100%;
     height: auto;
-    display: block;
 }
-@media (max-width: 1100px){
-    .container{
-        padding: clamp(1rem, 5vw, 10.5rem);
+
+.full {
+    width: 100%;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        gap: 10px;
+    }
+
+    .row img {
+        width: 50%;
     }
 }
