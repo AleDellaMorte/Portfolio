@@ -96,4 +96,4 @@ function goBack() {
 }
 
 
-ScrollReveal().reveal('.gallery img', { interval: 200});const params = new URLSearchParams(window.location.search);
+ScrollReveal().reveal('.gallery img', { interval: 200});
