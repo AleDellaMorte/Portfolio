@@ -6,9 +6,16 @@
     text-rendering: optimizeLegibility;
 }
 
+:root {
+  --bg-color: #ffffff;
+  --txt-color: #1b1b1b;
+}
+
 body {
     margin: 0;
     font-family: 'ThunderBlack';
+    background: var(--bg-color);;
+    color: var(--txt-color);
 }
 .container {
     width: 100vw;
