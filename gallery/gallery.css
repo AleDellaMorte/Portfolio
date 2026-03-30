@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'ThunderBlack';
+    src: url('../fonts/Thunder/Thunder-BlackLC.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    font-family: 'ThunderBlack';
+}
+.container {
+    width: 100vw;
+    max-width: 1700px;
+    margin: 40px auto;
+    padding: clamp(1rem, 10vw, 10.5rem);
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.nav img{
+    font-style: italic;
+    font-size: 1.8rem;
+    height: 45px;
+}
+.title {
+    font-size: 150px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 45px;
+    width: 100%;
+    text-align: center;
+
+}
+
+/* freccia indietro */
+.back {
+    cursor: pointer;
+    font-size: 3rem;
+    user-select: none;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media (max-width: 1100px){
+    .container{
+        padding: clamp(1rem, 5vw, 10.5rem);
+    }
+}
