@@ -1,4 +1,3 @@
-
 const params = new URLSearchParams(window.location.search);
 const set = params.get("set");
 
@@ -10,6 +9,10 @@ const data = {
     Animals: {
         title: "Animals",
         folder: "../photos/animals/animals_"
+    },
+    Street: {
+        title: "Street",
+        folder: "../photos/street/street_"
     }
 };
 
@@ -83,17 +86,3 @@ function buildLayout() {
 
     }
 }
-
-
-
-// FRECCIA INDIETRO
-function goBack() {
-    if (document.referrer) {
-        window.history.back();
-    } else {
-        window.location.href = "index.html";
-    }
-}
-
-
-ScrollReveal().reveal('.gallery img', { interval: 200});
