@@ -108,6 +108,7 @@ a, a:visited, a:link, a:active{
 .row img {
   width: 100%;
   height: auto;
+  min-width: 0;
 }
 
 .full {
