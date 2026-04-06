@@ -255,11 +255,7 @@ a:hover{
     display: block;
 }
 
-.carousel-cell::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-}
+
 
 .flickity-page-dots {
   bottom: -22px;
@@ -271,6 +267,16 @@ a:hover{
   width: 40px;
   margin: 0;
   border-radius: 0;
+}
+.expMore{
+  width: 900px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "ThunderBlack";
+  font-size: 5rem;
+  text-transform: uppercase;
 }
 /* -----------------------------------------------------FOOTER */
 .footer{
