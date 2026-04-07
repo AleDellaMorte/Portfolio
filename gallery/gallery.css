@@ -193,10 +193,10 @@ a, a:visited, a:link, a:active{
         flex-direction: column;
     }
     .topArrow{
-        right: 2rem;
+        right: 2.5rem;
         bottom: 7rem;
-        width: 4rem;
-        height: 4rem;
+        width: 6rem;
+        height: 6rem;
         padding: 0;
     }
 }
