@@ -101,6 +101,9 @@ a:hover{
   opacity: 0;
   pointer-events: none;
 }
+.loader-line.hidden {
+  display: none;
+}
 
 /* -----------------------------------------------------CONTAINER */
 .container {

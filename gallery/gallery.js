@@ -1,8 +1,9 @@
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
-
+  const loaderLine = document.getElementById("loader-line");
   setTimeout(() => {
     loader.classList.add("hidden");
+    setTimeout(() => {loaderLine.classList.add("hidden");}, 600);
   }, 500);
 });
 
