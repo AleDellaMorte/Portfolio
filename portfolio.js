@@ -1,3 +1,12 @@
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+
+  setTimeout(() => {
+    loader.classList.add("hidden");
+  }, 500);
+});
+
+
 const emailEl = document.getElementById("email");
 const email = "aledemor03@gmail.com";
 

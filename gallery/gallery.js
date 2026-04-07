@@ -1,3 +1,11 @@
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+
+  setTimeout(() => {
+    loader.classList.add("hidden");
+  }, 500);
+});
+
 const params = new URLSearchParams(window.location.search);
 const set = params.get("set");
 
