@@ -111,42 +111,50 @@ a, a:visited, a:link, a:active{
 }
 /* -----------------------------------------------------NAVBAR */
 .nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 }
 .nav img{
-    font-style: italic;
-    font-size: 1.8rem;
-    height: 45px;
+  font-style: italic;
+  font-size: 1.8rem;
+  height: 45px;
 }
 .title {
-    font-size: 150px;
-    text-transform: uppercase;
-    line-height: 1;
-    margin-top: 45px;
-    width: 100%;
-    text-align: center;
-    font-family: 'ThunderBlack';
+  font-size: 150px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 45px;
+  width: 100%;
+  text-align: center;
+  font-family: 'ThunderBlack';
 }
 
 /* freccia indietro */
 .back {
-    cursor: pointer;
-    font-size: 3rem;
-    user-select: none;
-    width: 5.3rem;
-    height: 5rem;
-    background-color: var(--txt-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1rem;
+  cursor: pointer;
+  font-size: 3rem;
+  user-select: none;
+  width: 5.3rem;
+  height: 5rem;
+  background-color: var(--txt-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
 }
 .back img{
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+.logo{
+  width: 5.3rem;
+  height: auto;
+}
+.logo img{
+  width: 100%;
+  height: auto;
 }
 /* -----------------------------------------------------GALLERY */
 .gallery {

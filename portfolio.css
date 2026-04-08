@@ -285,6 +285,7 @@ a:hover{
     font-size: clamp(1.2rem, 3vw, 1.5rem);
     letter-spacing: 2px;
     margin: 40px 0 18px 0;
+    text-transform: uppercase;
 }
 
 .flickity-viewport {
