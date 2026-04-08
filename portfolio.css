@@ -110,9 +110,7 @@ a:hover{
     width: 100vw;
     width: 100%;
     max-width: 1700px;
-    margin: 40px auto;
-    padding: 40px;
-    padding: clamp(1rem, 5vw, 2.5rem);
+    margin: 80px auto;
     padding-bottom: 0;
     margin-bottom: 0;
     box-sizing: border-box;
@@ -340,20 +338,52 @@ a:hover{
 
 /* -----------------------------------------------------FOOTER */
 .footer{
+  width: 100%;
+  height: auto;
+  padding: 5rem 0 5rem 0;
+  margin-top: 30px;
   color: var(--bg-color);
   background-color: var(--txt-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fWidth{
+  position: relative;
   font-family: "ThunderRegular";
-  margin-top: 30px;
-  width: auto;
-  height: auto;
+  width: clamp(100px, 100%, 1700px);
   display: flex;
   align-items: center;
+  gap: 7rem;
   justify-content: space-between;
-  padding: 5rem;
+  margin: 5rem;
+  flex-wrap: wrap;
+}
+.fColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 8rem;
+  font-family: "Delight";
+  font-size: 1.5rem;
+  width: 20rem;
+}
+.fTitle{
+  font-family: "ThunderRegular";
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 .footer p{
-  font-size: 2.8rem;
+  margin: 0;
 }
+.footer a{
+  text-decoration: none;
+  color: var(--bg-color);
+}
+.footer a:hover{
+  text-decoration: underline;
+}
+
 
 #email {
   cursor: pointer;
@@ -370,7 +400,7 @@ a:hover{
 }
 .topArrow img{
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 
@@ -468,13 +498,25 @@ a:hover{
     width: auto;
   }
   .footer{
-    width: calc(100vw - (5rem * 2));
-    transform: translateX(-20px);
+    padding: 0 0 5rem 0;
   }
-  .footer p{
-    text-decoration: underline;
+  .fWidth{
+      justify-content: space-between;
+      gap: 0;
   }
-
+  .fColumn{
+    margin-top: 5rem;
+  }
+  .fTitle{
+    font-size: 4rem;
+  }
+  .topArrow{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 5rem;
+    height: 5rem;
+  }
 
 }
 @media (max-height: 850px) and (max-width: 1300px) {
@@ -506,7 +548,9 @@ a:hover{
   .flickity-page-dots {
     bottom: -15px;
   }
-  .footer{
-    padding: 4rem;
+  .topArrow{
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }

@@ -39,6 +39,7 @@ body {
     background: var(--bg-color);;
     color: var(--txt-color);
     font-family: "Delight";
+    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
@@ -106,6 +107,7 @@ a, a:visited, a:link, a:active{
     margin: 40px auto;
     padding: clamp(1rem, 10vw, 10.5rem);
     padding-top: 0;
+    padding-bottom: 0;
     margin-bottom: 0;
     box-sizing: border-box;
 }
@@ -208,20 +210,52 @@ a, a:visited, a:link, a:active{
 }
 /* -----------------------------------------------------FOOTER */
 .footer{
+  width: 100%;
+  height: auto;
+  padding: 5rem 0 5rem 0;
+  margin-top: 30px;
   color: var(--bg-color);
   background-color: var(--txt-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fWidth{
+  position: relative;
   font-family: "ThunderRegular";
-  margin-top: 30px;
-  width: auto;
-  height: auto;
+  width: clamp(100px, 100%, 1700px);
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 5rem;
+  gap: 7rem;
+  justify-content: space-between;
+  margin: 5rem;
+  flex-wrap: wrap;
+}
+.fColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 8rem;
+  font-family: "Delight";
+  font-size: 1.5rem;
+  width: 20rem;
+}
+.fTitle{
+  font-family: "ThunderRegular";
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 .footer p{
-  font-size: 2.8rem;
+  margin: 0;
 }
+.footer a{
+  text-decoration: none;
+  color: var(--bg-color);
+}
+.footer a:hover{
+  text-decoration: underline;
+}
+
 
 #email {
   cursor: pointer;
@@ -245,6 +279,19 @@ a, a:visited, a:link, a:active{
         width: 6rem;
         height: 6rem;
         padding: 0;
+    }
+    .footer{
+      padding: 0 0 5rem 0;
+    }
+    .fWidth{
+        justify-content: space-between;
+        gap: 0;
+    }
+    .fColumn{
+      margin-top: 5rem;
+    }
+    .fTitle{
+      font-size: 4rem;
     }
 }
 @media (max-height: 850px) and (max-width: 1300px){
