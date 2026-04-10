@@ -23,6 +23,9 @@
 :root {
   --bg-color: #ffffff;
   --txt-color: #1b1b1b;
+  --max-width: 1700px;
+  --padding: clamp(1rem, 10vw, 10.5rem);
+  --margin: 40px;
 }
 ::-moz-selection { /* Code for Firefox */
   color: var(--bg-color);
@@ -103,9 +106,9 @@ a, a:visited, a:link, a:active{
 /* -----------------------------------------------------CONTAINER */
 .container {
     width: 100vw;
-    max-width: 1700px;
-    margin: 40px auto;
-    padding: clamp(1rem, 10vw, 10.5rem);
+    max-width: var(--max-width);
+    margin: var(--margin) auto;
+    padding: var(--padding);
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -210,26 +213,27 @@ a, a:visited, a:link, a:active{
 }
 /* -----------------------------------------------------FOOTER */
 .footer{
-  width: 100%;
+  width: 100vw;
   height: auto;
-  padding: 5rem 0 5rem 0;
   margin-top: 30px;
   color: var(--bg-color);
   background-color: var(--txt-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .fWidth{
   position: relative;
   font-family: "ThunderRegular";
-  width: clamp(100px, 100%, 1700px);
+  width: 100vw;
+  max-width: var(--max-width);
   display: flex;
   align-items: center;
   gap: 7rem;
   justify-content: space-between;
-  margin: 5rem;
+  margin: var(--margin) auto;
+  padding: var(--padding);
   flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .fColumn{
   display: flex;
