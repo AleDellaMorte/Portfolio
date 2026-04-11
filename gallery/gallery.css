@@ -182,7 +182,8 @@ a, a:visited, a:link, a:active{
 
 .row img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: block;
   min-width: 0;
 }
 
@@ -277,6 +278,11 @@ a, a:visited, a:link, a:active{
     .row{
         flex-direction: column;
     }
+    .row img{
+        width: 100% !important;
+        height: auto !important;
+    }
+
     .topArrow{
         right: 2.5rem;
         bottom: 7rem;
