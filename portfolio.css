@@ -441,6 +441,12 @@ a:hover{
   .intro-image{
     height: 100%;
   }
+  .carousel-cell {
+    height: 400px;
+  }
+  .flickity-page-dots {
+    bottom: -15px;
+  }
 }
 @media (min-height: 1600px) {
   .down-arrow{
@@ -567,10 +573,10 @@ a:hover{
     bottom: -50%;
   }
   .intro-text h1{
-    font-size: 4rem;
+    font-size: 7rem;
   }
   .intro-text p{
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .carousel-cell {
     height: 400px;
