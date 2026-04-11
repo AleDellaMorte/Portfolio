@@ -413,10 +413,12 @@ a:hover{
     font-size: 13rem;
   }
   .hero-top{
-    height: 20vh;
+    height: 25vh;
+    margin-bottom: 5rem;
   }
   .hero-image{
     height: 40vh;
+    margin-top: auto;
   }
 }
 @media (min-height: 1600px) {
