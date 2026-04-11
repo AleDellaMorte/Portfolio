@@ -406,6 +406,15 @@ a:hover{
 
 /* -----------------------------------------------------MEDIA-QUERY----------------------------------------------------- */
 @media (max-width: 1600px) {
+  .header{
+    margin-bottom: 1rem;
+  }
+  .container{
+    margin-top: 0;
+  }
+  .hero{
+    height: 100vh;
+  }
   .hero-me img {
     display: none;
   }
@@ -414,11 +423,23 @@ a:hover{
   }
   .hero-top{
     height: 25vh;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
   .hero-image{
     height: 40vh;
     margin-top: auto;
+  }
+  .intro{
+    margin-bottom: 10rem;
+  }
+  .intro-text{
+    height: 100%;
+  }
+  .intro-text h1{
+    font-size: 5rem;
+  }
+  .intro-image{
+    height: 100%;
   }
 }
 @media (min-height: 1600px) {
