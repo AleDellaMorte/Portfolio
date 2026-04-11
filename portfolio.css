@@ -111,6 +111,7 @@ a:hover{
     width: 100%;
     max-width: 1700px;
     margin: 80px auto;
+    padding: 1rem;
     padding-bottom: 0;
     margin-bottom: 0;
     box-sizing: border-box;
@@ -160,12 +161,7 @@ a:hover{
   background: url("photos/hero/hero_img.webp") no-repeat left center;
   background-size: cover;
 }
-/* .hero-image img{
-  position: absolute;
-  width: 100%;
-  object-fit: cover;
-  bottom: -30%;
-} */
+
 .hero-image::after {
     content: "";
     position: absolute;
@@ -412,6 +408,15 @@ a:hover{
 @media (max-width: 1600px) {
   .hero-me img {
     display: none;
+  }
+  .hero-title{
+    font-size: 13rem;
+  }
+  .hero-top{
+    height: 20vh;
+  }
+  .hero-image{
+    height: 40vh;
   }
 }
 @media (min-height: 1600px) {
