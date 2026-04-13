@@ -121,7 +121,7 @@ a:hover{
 }
 /* -----------------------------------------------------HERO */
 .hero {
-  margin-bottom: 50px;
+  margin-bottom: 1rem;
   height: 75vh;
   max-height: 1300px;
   position: relative;
@@ -198,9 +198,14 @@ a:hover{
 }
 
 /* -----------------------------------------------------DOWN-ARROW */
+.arrowBox{
+  position: relative;
+  width: 100%;
+  height: 65px;
+  margin-top: 5px;
+}
 .down-arrow {
   position: absolute;
-  top: calc(100vh - 80px);
   left: calc(50% - 14px);
   width: 0;
   height: 30px;
@@ -411,10 +416,13 @@ a:hover{
     margin-bottom: 1rem;
   }
   .hero{
-    height: 80vh;
+    margin-bottom: 5px;
+  }
+  .hero-me{
+    height: 100%;
   }
   .hero-me img {
-    height: 15rem;
+    height: 100%;
     width: auto;
   }
   .hero-title{
@@ -439,9 +447,9 @@ a:hover{
   }
 }
 @media (min-height: 1700px) {
-  .down-arrow{
+  /* .down-arrow{
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 1100px) {
@@ -460,6 +468,9 @@ a:hover{
     width: 100%;
     height: auto;
   }
+  .hero-me{
+    display: none;
+  }
   .hero-top {
     height: 300px;
   }
@@ -476,9 +487,9 @@ a:hover{
   .hero-title {
     width: 100%;
   }
-  .down-arrow{
+  /* .down-arrow{
     display: none;
-  }
+  } */
 
   .container {
     width: 100%;
@@ -532,6 +543,7 @@ a:hover{
   }
   .fColumn{
     margin-top: 5rem;
+    width: 40%;
   }
   .fTitle{
     font-size: 4rem;
@@ -578,5 +590,10 @@ a:hover{
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+}
+@media (max-width: 900px){
+  .hero-me{
+    display: none;
   }
 }
