@@ -311,15 +311,14 @@ a, a:visited, a:link, a:active{
     .topArrow{
         width: 3rem;
         height: 3rem;
-    
     }
 }
 @media (max-width: 1700px){
   :root{
       --max-width: 1400px;
-      --padding: clamp(1rem, 20vw, 10.5rem);
+      --padding: clamp(1rem, 10vw, 10.5rem);
     }
   .fColumn{
-    width: auto;
+    width: 40%;
   }
 }
