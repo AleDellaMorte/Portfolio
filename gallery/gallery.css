@@ -306,7 +306,7 @@ a, a:visited, a:link, a:active{
 }
 @media (max-height: 850px) and (max-width: 1300px){
     .container{
-        padding: 3rem 9rem 3rem 9rem;
+        padding: 3rem 15rem 3rem 15rem;
     }
     .topArrow{
         width: 3rem;
