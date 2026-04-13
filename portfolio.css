@@ -405,7 +405,7 @@ a:hover{
 
 
 /* -----------------------------------------------------MEDIA-QUERY----------------------------------------------------- */
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .header{
     margin-bottom: 1rem;
   }
@@ -448,7 +448,7 @@ a:hover{
     bottom: -15px;
   }
 }
-@media (min-height: 1600px) {
+@media (min-height: 1700px) {
   .down-arrow{
     display: none;
   }
