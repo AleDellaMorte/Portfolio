@@ -314,3 +314,12 @@ a, a:visited, a:link, a:active{
     
     }
 }
+@media (max-width: 1700px){
+  :root{
+      --max-width: 1400px;
+      --padding: clamp(1rem, 20vw, 10.5rem);
+    }
+  .fColumn{
+    width: auto;
+  }
+}
