@@ -335,6 +335,7 @@ a:hover{
 
 
 /* -----------------------------------------------------FOOTER */
+
 .footer{
   width: 100%;
   height: auto;
@@ -381,15 +382,9 @@ a:hover{
 .footer a:hover{
   text-decoration: underline;
 }
-
-
-#email {
-  cursor: pointer;
-  display: inline-block;
-}
-
-#email:hover {
-  text-decoration: underline;
+.fTitle::selection, .fInfo::selection, .footer a::selection{
+  color: var(--txt-color);
+  background: var(--bg-color);
 }
 
 .topArrow{
