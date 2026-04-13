@@ -22,6 +22,9 @@
 :root {
   --bg-color: #ffffff;
   --txt-color: #1b1b1b;
+  --max-width: 1700px;
+  --padding: clamp(1rem, 10vw, 10.5rem);
+  --margin: 40px;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -109,7 +112,7 @@ a:hover{
 .container {
     width: 100vw;
     width: 100%;
-    max-width: 1700px;
+    max-width: var(--max-width);
     margin: 80px auto;
     padding: 1rem;
     padding-bottom: 0;
@@ -350,7 +353,7 @@ a:hover{
 .fWidth{
   position: relative;
   font-family: "ThunderRegular";
-  width: clamp(100px, 100%, 1700px);
+  width: clamp(100px, 100%, var(--max-width));
   display: flex;
   align-items: center;
   gap: 7rem;
@@ -401,6 +404,9 @@ a:hover{
 
 /* -----------------------------------------------------MEDIA-QUERY----------------------------------------------------- */
 @media (max-width: 1700px) {
+  :root{
+    --max-width: 1200px;
+  }
   .header{
     margin-bottom: 1rem;
   }
@@ -408,10 +414,11 @@ a:hover{
     margin-top: 0;
   }
   .hero{
-    height: 100vh;
+    height: 80vh;
   }
   .hero-me img {
-    display: none;
+    height: 15rem;
+    width: auto;
   }
   .hero-title{
     font-size: 13rem;
@@ -424,23 +431,14 @@ a:hover{
     height: 40vh;
     margin-top: auto;
   }
-  .intro{
-    margin-bottom: 10rem;
-  }
-  .intro-text{
-    height: 100%;
-  }
-  .intro-text h1{
-    font-size: 5rem;
-  }
-  .intro-image{
-    height: 100%;
-  }
   .carousel-cell {
-    height: 400px;
+    height: 500px;
   }
   .flickity-page-dots {
-    bottom: -15px;
+    bottom: -18px;
+  }
+  .fColumn{
+    width: auto;
   }
 }
 @media (min-height: 1700px) {
