@@ -193,7 +193,7 @@ a, a:visited, a:link, a:active{
 /* -----------------------------------------------------BACK-TO-TOP-ARROW */
 .topArrow{
     position: fixed;
-    bottom: 5vw;
+    bottom: var(--padding);
     right: 5vw;
     width: 5rem;
     height: 5rem;
@@ -285,7 +285,7 @@ a, a:visited, a:link, a:active{
 
     .topArrow{
         right: 2.5rem;
-        bottom: 7rem;
+        bottom: calc(5rem + var(--padding));
         width: 6rem;
         height: 6rem;
         padding: 0;
