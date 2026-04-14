@@ -313,7 +313,7 @@ a, a:visited, a:link, a:active{
         height: 3rem;
     }
 }
-@media (max-width: 1700px){
+@media (max-width: 2000px){
   :root{
       --max-width: 1400px;
       --padding: clamp(1rem, 10vw, 10.5rem);

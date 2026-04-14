@@ -415,6 +415,9 @@ a:hover{
   :root{
     --max-width: 1200px;
   }
+  .container{
+    margin-top: 1rem;
+  }
   .header{
     margin-bottom: 1rem;
   }
