@@ -358,7 +358,7 @@ a:hover{
 .fWidth{
   position: relative;
   font-family: "ThunderRegular";
-  width: clamp(100px, 100%, var(--max-width));
+  width: clamp(100px, 100%, calc(var(--max-width) - 2rem));
   display: flex;
   align-items: center;
   gap: 7rem;
@@ -411,7 +411,7 @@ a:hover{
 
 
 /* -----------------------------------------------------MEDIA-QUERY----------------------------------------------------- */
-@media (max-width: 1700px) {
+@media (max-width: 2000px) {
   :root{
     --max-width: 1200px;
   }
@@ -425,11 +425,11 @@ a:hover{
     height: 100%;
   }
   .hero-me img {
-    height: 100%;
+    height: 15rem;
     width: auto;
   }
   .hero-title{
-    font-size: 13rem;
+    font-size: 15rem;
   }
   .hero-top{
     height: 25vh;
