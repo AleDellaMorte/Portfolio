@@ -26,6 +26,7 @@
   --max-width: 1700px;
   --padding: clamp(1rem, 10vw, 10.5rem);
   --margin: 40px;
+  --gap: 20px;
 }
 ::-moz-selection { /* Code for Firefox */
   color: var(--bg-color);
@@ -165,7 +166,7 @@ a, a:visited, a:link, a:active{
 .gallery {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--gap);
   position: relative;
 }
 .gallery::after {
@@ -177,7 +178,7 @@ a, a:visited, a:link, a:active{
 
 .row {
   display: flex;
-  gap: 10px;
+  gap: var(--gap);
 }
 
 .row img {
@@ -317,6 +318,7 @@ a, a:visited, a:link, a:active{
   :root{
       --max-width: 1400px;
       --padding: clamp(1rem, 10vw, 10.5rem);
+      --gap: 50px;
     }
   .fColumn{
     width: 40%;
