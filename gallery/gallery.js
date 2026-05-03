@@ -27,6 +27,10 @@ const data = {
   Street: {
     title: "Street",
     folder: "../photos/street/street_"
+  },
+  Car_Shoots: {
+    title: "Car Shoots",
+    folder: "../photos/car_shoots/car_"
   }
 };
 
