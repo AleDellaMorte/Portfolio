@@ -31,6 +31,10 @@ const data = {
   Car_Shoots: {
     title: "Car Shoots",
     folder: "../photos/car_shoots/car_"
+  },
+  KimeraK39: {
+    title: "Kimera K39",
+    folder: "../photos/kimera_k39/kimera_"
   }
 };
 
