@@ -41,7 +41,7 @@ const data = {
 const gallery = document.getElementById("gallery");
 const title = document.getElementById("title");
 
-// sicurezza
+// err
 if (!data[set]) {
   title.textContent = "Not Found";
   throw new Error("Set non valido");
@@ -71,7 +71,7 @@ function loadImages(folder) {
 
 loadImages(data[set].folder);
 
-// ----------------------------------------------------- CREA ROW BILANCIATA (🔥 FIX)
+// ----------------------------------------------------- CREA ROW BILANCIATA
 function createBalancedRow(img1, img2) {
   const row = document.createElement("div");
   row.classList.add("row");
@@ -118,7 +118,7 @@ function buildLayout() {
     if (portrait[i + 1]) {
       portraitPairs.push([portrait[i], portrait[i + 1]]);
     } else {
-      landscape.push(portrait[i]); // dispari → diventa full
+      landscape.push(portrait[i]);
     }
   }
 
@@ -134,7 +134,7 @@ function buildLayout() {
       gallery.appendChild(landscape[i]);
     }
 
-    // VERTICALI (🔥 FIX BILANCIATO)
+    // VERTICALI
     if (portraitPairs[i]) {
       const row = createBalancedRow(
         portraitPairs[i][0],
