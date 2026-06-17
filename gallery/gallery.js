@@ -35,6 +35,10 @@ const data = {
   KimeraK39: {
     title: "Kimera K39",
     folder: "../photos/kimera_k39/kimera_"
+  },
+  Motor_Valley: {
+    title: "Motor Valley",
+    folder: "../photos/motor_valley/MotorValley_"
   }
 };
 
